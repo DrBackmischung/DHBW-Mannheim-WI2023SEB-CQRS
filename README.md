@@ -57,6 +57,20 @@ erlang-cqrs/
 └── README.md
 ```
 
+**Commands (Schreiben)**:
+- POST /orders
+- PUT /orders/:id
+- DELETE /orders/:id
+
+**Queries (Lesen)**:
+- GET /orders
+- GET /orders/:id
+
+**Architektur-Erklärung:**
+- **CQRS** trennt Lese- und Schreibvorgänge.
+- Commands ändern Daten, Queries lesen nur.
+- Vorteile: Performance-Optimierung, klare Verantwortlichkeiten, bessere Skalierbarkeit.
+
 ## 📚 Hinweise
 
 - In echtem CQRS erfolgt die Synchronisation via Events oder Messaging.
